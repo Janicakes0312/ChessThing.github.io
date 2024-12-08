@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Chess Thing</title>
+    <style>
+        header{
+            background: url(img/HomeBg.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .dropdown-content li a {
+            color: white;
+        }
+        
+        .sidenav {
+            background-image: url(img/cw.jpg);
+            z-index: 1000;
+        }
+        .greet p {
+            font-size: 20px;
+        }
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .Play_chess {
+            text-align: center;
+            font-size: 30px;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper brown">
+                <div class="container">
+                    <a href="#" class="brand-logo">Chess Thing</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content brown">
+                                <li><a href="#greetings">Greetings</a></li>
+                                <li><a href="#let'splay">Let's Play</a></li>
+                            </ul>
+                            <li><a href="About.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content brown">
+                                <li><a href="#origin">Origin</a></li>
+                                <li><a href="#sm">Special Move</a></li>
+                                <li><a href="#obj">Objectives</a></li>
+                                <li><a href="#strat">Strategy and Tactics</a></li>
+                            </ul>
+                        <li><a href="photo's.html" class="dropdown-trigger" data-target="dropdown3">Photo's</a></li>
+                            <ul id="dropdown3" class="dropdown-content brown">
+                                <li><a href="#chessboard">Board</a></li>
+                                <li><a href="#pieces">Pieces</a></li>
+                            </ul>
+                        <li><a href="trivia.html" class="dropdown-trigger" data-target="dropdown4">Trivia</a></li>
+                            <ul id="dropdown4" class="dropdown-content brown">
+                                <li><a href="#fact">Fact</a></li>
+                            </ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="sidenav grey lighte-2" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#greetings">Greetings</a></li>
+                <li><a href="#let'splay">Let's Play</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="photo's.html">Photo's</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container section scrollspy" id="greetings">
+        <div class="greet">
+            <div class="col s12 l16">
+                <h2 class="brown-text center-align">Good Day!</h2>
+                <p>Greetings, noble chess player! As you position yourself at the board, you step into a realm where intellect and creativity converge, crafting a tapestry woven from the threads of strategy, patience, and foresight. This timeless game, cherished across centuries and cultures, invites you to engage in a profound exploration of the human mind, where every piece represents not just a move, but a philosophy, a strategy, and a story of its own.<br><br>
+                May your opening moves be deliberate and thoughtful, reflecting the countless lessons learned from chess legends who have graced the board before you. As you unleash your pawns, let them be the foundation of your kingdom, each one a brave soldier ready to forge ahead into the fray. Allow your knights to leap into action, embodying the spirit of adventure, while your bishops glide elegantly across the diagonals, representing clarity of vision and purpose. Each piece has its role, and in their dance lies the potential for victory.<br><br>    
+                As the battle unfolds, remain attuned to the rhythm of the game. Every decision you make echoes with significance—whether to launch a bold attack or to solidify your defenses—each move becomes a brushstroke on the canvas of your strategy. Embrace the challenges that arise, for they are not obstacles but opportunities for growth. Learn to see beyond the immediate, to anticipate your opponent’s moves, and to adapt your strategy as the game evolves.<br><br>    
+                In the face of adversity, let your resilience shine through. Chess teaches us that setbacks are a natural part of any journey; it is how we respond to those moments that defines us. Every defeat carries the seeds of wisdom, offering insights that refine your skills and deepen your understanding of the game. Approach each match as a masterclass in self-discovery, where you hone not only your tactical abilities but also your emotional fortitude.<br><br>    
+                As you engage with your opponent, remember that the heart of chess lies in the camaraderie shared between players. This is a space where respect flourishes, where each move is met with admiration, and where the love for the game transcends competition. Forge connections with fellow players, sharing stories, strategies, and the joy of the game. In this community, you will find inspiration, encouragement, and the motivation to elevate your play.<br><br>    
+                Chess is not merely a game; it is a lifelong journey that mirrors the complexities of life itself. Just as in chess, our lives are a series of choices, each with its own consequences, requiring foresight, planning, and adaptability. Approach each game with a spirit of curiosity and exploration, ready to learn and grow, and relish in the process of discovery that unfolds with every match.<br><br>    
+                So, as you prepare to make your first move, let your heart be filled with excitement and anticipation. Embrace the challenge, and play with passion and purpose. With every piece you move, let it symbolize not just a step toward victory, but a testament to your dedication, your intellect, and your unwavering commitment to the noble art of chess. May your journey at the board be one of endless exploration, profound learning, and joyful triumphs, as you navigate the rich landscape of this magnificent game!</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/chessL.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="let'splay">
+        <div class="let'splay">
+            <div class="col s12 l16">
+                <h2 class="brown-text center-align">Let's Play</h2>
+                <p>I’d like to extend a heartfelt invitation to you for a game of chess! There’s something truly special about gathering around the board, where strategy, intellect, and creativity converge in a timeless battle of wits. Chess offers a unique opportunity to challenge each other, allowing us to dive deep into the intricacies of the game while enjoying friendly competition. Whether you're a seasoned player with countless strategies up your sleeve or just starting to explore the fascinating world of chess, I believe we can both gain something valuable from the experience. Each match offers lessons not only in tactics but also in patience, foresight, and the art of anticipating an opponent's moves. The beauty of chess lies in its complexity—every game unfolds differently, presenting new challenges and opportunities. It’s a dance of strategy and intuition, where every piece on the board has its own story and purpose.<br><br>
+                I always find that engaging in a game together sparks interesting discussions about strategy and technique, and it’s a great way to bond over our shared passion for this incredible game. Imagine the thrill of making bold moves, executing clever traps, and countering each other's strategies as we navigate through the game. With every pawn advanced, every knight maneuvered, and every sacrifice made, we’ll not only challenge each other’s skills but also deepen our understanding of this age-old art.<br><br>    
+                So, if you’re interested, let me know your availability, and we can arrange a time that works for both of us. I’m eager to share this experience with you and see where our strategies lead us. Let’s set the pieces, enjoy some friendly rivalry, and perhaps even create some unforgettable moments filled with laughter and insight. Here’s to a memorable match that will not only challenge our minds but also strengthen our friendship as we dive into the rich tapestry of chess!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 l4 push-l3">
+            <img src="img/pc1.gif" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l4 push-l2 offset-l1">
+            <img src="img/pc2.gif" alt="" class="responsive-img materialboxed">
+        </div>
+    </div>
+
+    <br><br>
+
+    
+    <div class="Play_chess">
+            <a href="https:www.chess.com/"> Play Chess</a>
+    </div>
+
+    <br><br>
+    
+    
+    <footer class="page-footer white">
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Chess Thing</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

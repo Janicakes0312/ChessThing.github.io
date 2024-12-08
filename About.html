@@ -1,0 +1,294 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Chess Thing</title>
+    <style>
+        
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .dropdown-content li a {
+            color: white;
+        }
+
+        .sidenav {
+            background-image: url(img/cw.jpg);
+            z-index: 1000;
+        }
+
+        .row p {
+            font-size: 15px;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .SM p {
+            font-size: 25px;
+        }
+
+        .obj p {
+            font-size: 25px;
+        }
+
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper brown">
+                <div class="container">
+                    <a href="#" class="brand-logo">Chess Thing</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content brown">
+                                <li><a href="#greetings">Greetings</a></li>
+                                <li><a href="#let'splay">Let's Play</a></li>
+                            </ul>
+                        <li><a href="About.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content brown">
+                                <li><a href="#origin">Origin</a></li>
+                                <li><a href="#sm">Special Move</a></li>
+                                <li><a href="#obj">Objectives</a></li>
+                                <li><a href="#strat">Strategy and Tactics</a></li>
+                            </ul>
+                        <li><a href="photo's.html" class="dropdown-trigger" data-target="dropdown3">Photo's</a></li>
+                            <ul id="dropdown3" class="dropdown-content brown">
+                                <li><a href="#chessboard">Board</a></li>
+                                <li><a href="#pieces">Pieces</a></li>
+                            </ul>
+                        <li><a href="trivia.html" class="dropdown-trigger" data-target="dropdown4">Trivia</a></li>
+                            <ul id="dropdown4" class="dropdown-content brown">
+                                <li><a href="#fact">Fact</a></li>
+                            </ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="sidenav grey lighte-2" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#origin">Origin</a></li>
+                <li><a href="#sm">Special Move</a></li>
+                <li><a href="#obj">Objectives</a></li>
+                <li><a href="photo's.html">Photo's</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container section scrollspy" id="chess">
+        <div class="row">
+            <div class="col s12 l13">
+                <h2 class="brown-text center-align">"Life is a game of chess, and every decision is a move. Sometimes you must sacrifice something to gain something greater." — Unknown</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="origin">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="brown-text text-darken-4">What is Chess</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chess is a strategic board game played between two players. It takes place on an 8x8 grid called a chessboard, featuring 64 squares of alternating colors. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate the opponent's king, which means putting it in a position where it cannot escape capture.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The game involves deep strategic thinking, tactics, and foresight, with players moving their pieces according to specific rules. Each type of piece has its own unique way of moving. Chess is not only a popular recreational activity but also a competitive sport, with international tournaments and a rich history spanning centuries.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#introduction"class="brown-text text-darken-4">Introduction</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#history"class="brown-text text-darken-4">History</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="introduction">
+                    <p class="flow-text brown-text text-darken-4">INTRODUCTION</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chess is a two-player strategy board game played on an 8x8 grid, where each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate the opponent’s king, meaning it is under attack and cannot escape capture.<br><br>
+                    Each piece moves in a unique way:<br>
+                    King: one square in any direction.<br>
+                    Queen: any number of squares in any direction.<br>
+                    Rook: any number of squares horizontally or vertically.<br>
+                    Bishop: any number of squares diagonally.<br>
+                    Knight: in an "L" shape, two squares in one direction and one square perpendicular.<br>
+                    Pawn: one square forward, but captures diagonally; can move two squares forward on its first move.<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chess is a game of deep strategy, requiring planning, tactics, and foresight. The game can end in a win, draw, or stalemate. It has a rich history, with competitive play dating back to the 19th century and modern developments like online play and computer-assisted analysis enhancing its global popularity.</p>
+                </div>
+                <div class="col s12" id="history">
+                    <p class="flow-text brown-text text-darken-4">HISTORY</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chess originated in India around the 6th century as Chaturanga, evolving through Persia (as Shatranj) before spreading to Europe. In medieval Europe, the game began to resemble modern chess, with significant rule changes, like the queen's movement. By the 15th century, modern chess was formed.<br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first official World Chess Championship was held in 1886, with Wilhelm Steinitz as the first champion. Legendary players include Bobby Fischer, Garry Kasparov, and Magnus Carlsen. The digital age introduced chess engines like Deep Blue and platforms like Chess.com, making the game more accessible. Today, chess is a global intellectual sport played and enjoyed worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/achess1.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="sm">
+        <div class="SM">
+            <div class="col s12 l16">
+                <h2 class="brown-text center-align">Special Moves</h2>
+            </div>
+        </div>
+    </div>
+
+    <section class="container section scrollspy" id="moves">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/cast.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="brown-text text-darken-2">Castling</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A move involving the King and a Rook. It is the only time the King can move more than one square. The King moves two squares toward a Rook, and the Rook then moves to the square over which the King crossed.<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Conditions for castling:</b> Neither the King nor the Rook involved can have moved previously, and there can be no pieces between the King and Rook.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/passant.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="brown-text text-darken-2">En Passant</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A special capture that can occur when a pawn moves two squares forward from its starting position, landing next to an opponent's pawn. The opponent may capture the pawn as if it had moved only one square.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/pawnp.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="brown-text text-darken-2">Pawn Promotion</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When a pawn reaches the opponent’s back rank (the 8th rank for White, 1st rank for Black), it can be promoted to any piece—usually a Queen, though other pieces like Rooks, Bishops, or Knights can also be chosen.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container section scrollspy" id="obj">
+        <div class="obj">
+            <div class="col s12 l16">
+                <h2 class="brown-text center-align">Objectives</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12 l4 push-l1">
+            <img src="img/objchess.gif" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 push-l1">
+            <h2 class="brown-text text-darken-2"></h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The primary goal is to checkmate your opponent’s King, which means putting their King in a position where it is under attack and cannot escape capture.</p>
+        </div>
+    </div>
+
+    <div class="container section scrollspy" id="basic">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="brown-text text-darken-4">Basic Rules</h2>
+                <p>1.&nbsp;&nbsp;Players alternate moves, starting with White.<br>
+                   2.&nbsp;&nbsp;A piece is moved according to its allowed movements.<br>
+                   3.&nbsp;&nbsp;If a piece moves into a square occupied by an opponent’s piece, that piece is captured and removed from the board.<br>
+                   4.&nbsp;&nbsp;The game can also end in a draw or stalemate (where one player cannot make a legal move), or insufficient material (when one side has too few pieces to checkmate).</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <h2 class="brown-text text-darken-4">Chess Notation</h2>
+                <p>Moves are often written using algebraic notation:<br><br>
+                    <li>The board is labeled with columns (a-h) and rows (1-8).</li>
+                    <li>A move like e4 means moving a pawn to e4 (the 4th square in the e column).</li>
+                    <li>Nf3 means a Knight moves to the f3 square.</li>
+                    <li>Qe5 means the Queen moves to e5.</li></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/chess1.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container section scrollspy" id="strat">
+        <div class="row">
+            <div class="col s6"><br><br>
+                <img src="img/stchess.gif" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Strategy and Tactics</h2>
+                <p>Chess is known for its complexity and depth. Some basic concepts include:<br><br>
+                <li>Control the center: Dominating the center squares (e4, d4, e5, d5) gives more maneuverability and flexibility.</li>
+                <li>Piece development: Moving pieces (especially Knights and Bishops) into active squares early in the game.</li>
+                <li>King safety: Castling early to protect the King is often recommended.</li>
+                <li>Pawn structure: Pay attention to how your pawns are arranged. Weaknesses like isolated pawns or doubled pawns can be exploited.</li></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer white">
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Chess Thing</div>
+        </div>
+    </footer>
+
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

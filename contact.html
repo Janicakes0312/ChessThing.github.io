@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Chess Thing</title>
+    <style>
+        header{
+            background: url(img/cont.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 450px;
+        }
+
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .dropdown-content li a {
+            color: white;
+        }
+        
+        .sidenav {
+            background-image: url(img/cw.jpg);
+            z-index: 1000;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper brown">
+                <div class="container">
+                    <a href="#" class="brand-logo">Chess Thing</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content brown">
+                                <li><a href="#greetings">Greetings</a></li>
+                                <li><a href="#let'splay">Let's Play</a></li>
+                            </ul>
+                        <li><a href="About.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content brown">
+                                <li><a href="#origin">Origin</a></li>
+                                <li><a href="#sm">Special Move</a></li>
+                                <li><a href="#obj">Objectives</a></li>
+                                <li><a href="#strat">Strategy and Tactics</a></li>
+                            </ul>
+                        <li><a href="photo's.html" class="dropdown-trigger" data-target="dropdown3">Photo's</a></li>
+                            <ul id="dropdown3" class="dropdown-content brown">
+                                <li><a href="#chessboard">Board</a></li>
+                                <li><a href="#pieces">Pieces</a></li>
+                            </ul>
+                        <li><a href="trivia.html" class="dropdown-trigger" data-target="dropdown4">Trivia</a></li>
+                            <ul id="dropdown4" class="dropdown-content brown">
+                                <li><a href="#fact">Fact</a></li>
+                            </ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://www.instagram.com/wwwchesscom?igsh=MW1wZzRjaXQ4NzN0aQ==" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                        <li><a href="https://www.facebook.com/chess?mibextid=ZbWKwL" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                        <li><a href="https://x.com/chesscom?t=UZENalMj3lhjEgL7ihIbZA&s=09" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/company/chess-com/" class="tooltipped btn-floating btn-small transparent" data-tooltip="This is Linked In">
+                            <i class="fab fa-linkedIn"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="sidenav grey lighte-2" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="photo's.html">Photo's</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="brown-text text-darken-4">Get in Touch</h2>
+                <p>If you'd like to get in touch with me about chess, I'd be more than happy to discuss the game in detail! Whether you want to dive into strategies, famous games, the history of chess, or even learn more about specific openings, tactics, and endgames, I'm here to chat. Chess is a fascinating game that combines skill, creativity, and deep thinking, and there's always something new to learn, whether you're a beginner or a seasoned player. Let me know your interests, and we can explore the world of chess together!</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id="email">
+                    <label for="email">Your Email</label> 
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">date_range</i>
+                    <input type="text" id="date" class="datepicker">
+                    <label for="date">Choose a date you need me for...</label>
+                </div>
+                <div class="input-field">
+                    <p>Services required...</p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Let's Play</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Want to learn more</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>
+                        If you'd like to share more about your experience with chess, I'd love to hear about it! Whether you're a beginner or an advanced player, playing chess can be both a challenging and rewarding experience. Perhaps you have a favorite opening, a particular strategy that works well for you, or memorable games you've played. Or maybe you're looking to improve in certain areas, such as tactics, endgames, or understanding positional play. Feel free to tell me more about how you approach the game, and we can discuss tips or ideas to help you level up your chess skills!</p>   
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Linked In</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Chess Thing</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

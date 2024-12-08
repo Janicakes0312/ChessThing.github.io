@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Chess Thing</title>
+    <style>
+
+        header{
+            background: url(img/pb.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .dropdown-content li a {
+            color: white;
+        }
+
+        .sidenav {
+            background-image: url(img/cw.jpg);
+            z-index: 1000;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper brown">
+                <div class="container">
+                    <a href="#" class="brand-logo">Chess Thing</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content brown">
+                                <li><a href="#greetings">Greetings</a></li>
+                                <li><a href="#let'splay">Let's Play</a></li>
+                            </ul>
+                        <li><a href="About.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content brown">
+                                <li><a href="#origin">Origin</a></li>
+                                <li><a href="#sm">Special Move</a></li>
+                                <li><a href="#obj">Objectives</a></li>
+                                <li><a href="#strat">Strategy and Tactics</a></li>
+                            </ul>
+                        <li><a href="photo's.html" class="dropdown-trigger" data-target="dropdown3">Photo's</a></li>
+                            <ul id="dropdown3" class="dropdown-content brown">
+                                <li><a href="#chessboard">Board</a></li>
+                                <li><a href="#pieces">Pieces</a></li>
+                            </ul>
+                        <li><a href="trivia.html" class="dropdown-trigger" data-target="dropdown4">Trivia</a></li>
+                            <ul id="dropdown4" class="dropdown-content brown">
+                                <li><a href="#fact">Fact</a></li>
+                            </ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="sidenav grey lighte-2" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="photo's.html">Photo's</a></li>
+                <li><a href="#chessboard">Board</a></li>
+                <li><a href="#pieces">Pieces</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container section scrollspy" id="chessboard">
+        <div class="row">
+            <div class="col s12 l5 push-l1">
+                <img src="img/board.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l5 offset-l1">
+                <h2 class="brown-text center">Board</h2>
+                <p>In chess, the board refers to the rectangular grid on which the game is played. It consists of 64 squares, arranged in an 8x8 grid, alternating between light and dark squares. The board is where all the pieces move, interact, and ultimately where the game is won or lost.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section class="container section scrollspy" id="pieces">  
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/king.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">King</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The King is the most important piece in chess, moving one square in any direction. The goal is to checkmate the opponent’s king, meaning it’s trapped and cannot escape capture. When the king is threatened, it’s in check, and the player must protect it. A special move called castling involves the king and rook to protect the king. Although the king is weak in movement and cannot be captured directly, its safety is crucial; if it is checkmated, the game ends.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Queen.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Queen</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The queen is the most powerful piece in chess, able to move any number of squares in any direction. It plays a crucial role in attacking, controlling the board, and supporting other pieces. Losing the queen is a significant disadvantage, but it’s often used strategically.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/rook.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Rook</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The rook moves any number of squares horizontally or vertically. It plays a key role in defense, attacking, and checkmating, especially in the endgame. Rooks are powerful on open files, where they control large areas of the board.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/bishop.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Bishop</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Bishop moves diagonally across the board, any number of squares. Each player starts with two bishops: one on a light square and one on a dark square, and each can only move on its respective color. Bishops are powerful for controlling long diagonals and can cover a lot of ground, but they are limited to one color of square for the entire game.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/knight.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Knight</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Knight moves in an "L" shape: two squares in one direction (horizontal or vertical) and then one square perpendicular. It’s the only piece that can jump over other pieces. Knights are useful for forking attacks and controlling key squares.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/pawn.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">Pawn</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Pawn moves one square forward and captures diagonally. On its first move, it can move two squares. When it reaches the opponent's back rank, it can be promoted to any piece (usually a queen). Though limited in movement, pawns are crucial for controlling the board and supporting attacks.</p>
+            </div>
+        </div>
+
+    </section>
+    
+    
+   <footer class="page-footer white">
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Chess Thing</div>
+        </div>
+    </footer>
+
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

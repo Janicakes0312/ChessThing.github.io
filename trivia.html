@@ -1,0 +1,291 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Chess Thing</title>
+    <style>
+
+        header{
+            background: url(img/pb.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        .nav {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .dropdown-content li a {
+            color: white;
+        }
+
+        .sidenav {
+            background-image: url(img/cw.jpg);
+            z-index: 1000;
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper brown">
+                <div class="container">
+                    <a href="#" class="brand-logo">Chess Thing</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html" class="dropdown-trigger" data-target="dropdown1">Home</a></li>
+                            <ul id="dropdown1" class="dropdown-content brown">
+                                <li><a href="#greetings">Greetings</a></li>
+                                <li><a href="#let'splay">Let's Play</a></li>
+                            </ul>
+                            <li><a href="About.html" class="dropdown-trigger" data-target="dropdown2">About</a></li>
+                            <ul id="dropdown2" class="dropdown-content brown">
+                                <li><a href="#origin">Origin</a></li>
+                                <li><a href="#sm">Special Move</a></li>
+                                <li><a href="#obj">Objectives</a></li>
+                                <li><a href="#strat">Strategy and Tactics</a></li>
+                            </ul>
+                        <li><a href="photo's.html" class="dropdown-trigger" data-target="dropdown3">Photo's</a></li>
+                            <ul id="dropdown3" class="dropdown-content brown">
+                                <li><a href="#chessboard">Board</a></li>
+                                <li><a href="#pieces">Pieces</a></li>
+                            </ul>
+                        <li><a href="trivia.html" class="dropdown-trigger" data-target="dropdown4">Trivia</a></li>
+                            <ul id="dropdown4" class="dropdown-content brown">
+                                <li><a href="#fact">Fact</a></li>
+                            </ul>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <ul class="sidenav grey lighte-2" id="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="photo's.html">Photo's</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="#fact">Fact</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="container section scrollspy" id="fact">
+        <div class="row">
+            <div class="col s12 l13 center-align">
+                <h2 class="brown-text center">15 Fun Facts About Chess</h2>
+            </div>
+        </div>
+    </section>    
+
+    <section class="container section scrollspy" id="Facts">  
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/ochess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">1. Oldest Known Chess Set</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The oldest known chess set was discovered in 1831 on the Isle of Lewis in Scotland. It's believed to have been carved in the 12th century and is made of walrus ivory.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/cb.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">2. Chessboard Layout</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A chessboard has 64 squares in total (8x8 grid). The two colors of squares are traditionally black and white, but many modern chessboards use a variety of colors like green and brown.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/lchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">3. Longest Game Ever Played</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The longest chess game in history lasted 269 moves. It occurred between Nikita Pliskov and Andrey Zaitsev in 1989, ending in a draw.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/pawnp.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">4. The Pawn’s Promotion</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When a pawn reaches the opponent’s back rank (the 8th rank for White, 1st rank for Black), it can be promoted to any other piece, typically a queen. This is called "pawn promotion," and there is no limit to how many queens one can have at once.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/cmove.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">5. The 50-Move Rule</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In chess, if 50 consecutive moves are made by both players without a pawn being moved or a piece being captured, the game can be claimed as a draw by either player.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/tchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">6. First Chess Tournament</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first modern chess tournament was held in 1851 in London, organized by Howard Staunton. It is considered one of the most important early tournaments in the history of the game.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/cchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">7. The Chess Clock</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The chess clock, which is used to keep time for each player's move, was invented in 1883 by the German inventor Thomas Bright. It has become a standard in competitive play.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">8. Magnus Carlsen's Young Achievement</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Magnus Carlsen, a Norwegian chess grandmaster, became the youngest player to achieve the title of grandmaster at the age of 13 years and 148 days in 2004.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/enp.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">9. “En Passant”</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The "en passant" rule allows a pawn that moves two squares forward from its starting position to be captured by an adjacent pawn as if it had only moved one square. This rule can only be applied immediately after the pawn makes its two-square move.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/fchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">10. Famous Chess Match – Fischer vs. Spassky</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The 1972 World Chess Championship between Bobby Fischer (USA) and Boris Spassky (USSR) is one of the most famous in history, symbolizing the Cold War rivalry between the USA and the Soviet Union.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/dchess.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">11. Chess as a Digital Sport</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The first computer program to defeat a human world champion was IBM's "Deep Blue," which beat Garry Kasparov in 1997 in a six-game match.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/mac.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">12. Chess and Mathematics</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The number of possible unique chess games is astronomically large. It is estimated that there are about 10^120 possible positions, which is greater than the number of atoms in the observable universe.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/ccheck.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">13. "Checkmate" Meaning</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The term "checkmate" comes from the Persian phrase "Shah Mat," which means "the king is dead" or "the king is helpless." It signifies the end of the game.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/cap.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h2 class="brown-text text-darken-2">14. Chess and Psychology</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chess is often seen as a battle of wits and strategy. A study from the University of Texas found that playing chess can enhance cognitive abilities, improve problem-solving skills, and even increase IQ.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/fc.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="brown-text text-darken-2">15. The First Chessboard Game</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The game of chess is believed to have originated in India around the 6th century AD, where it was known as "Chaturanga." It spread to Persia and later to the rest of the world.</p>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    <footer class="page-footer white">
+        <div class="footer-copyright grey text-darken-4">
+            <div class="container center-align">&copy; 2024 Chess Thing</div>
+        </div>
+    </footer>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.dropdown-trigger').dropdown({
+                coverTrigger:false,
+                constrainWidth:false,
+                hover:true
+            })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
